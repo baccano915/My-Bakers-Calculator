@@ -1,0 +1,181 @@
+#recipe{
+    width: 95%;
+    height: auto;
+    background-color: var(--clr-6);
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding-bottom: .75rem;
+}
+
+#recipe__title{
+    font-size: var(--size-4xl);
+    font-family: comico, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--clr-3);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
+#recipe__message{
+    border-radius: 0px 10px 0px 10px;
+    padding: 1rem;
+    background-color: var(--clr-9);
+    text-align: center;
+    margin: 2rem 1rem;;
+    color: black;
+    font-weight: 300;
+    font-family: switzer;
+}
+
+#dropdown__container{
+    width: 100%;
+    text-align: center;
+}
+
+#recipe__dropdown{
+    height: 2.5rem;
+    margin: 0.5rem auto;
+    background-color: var(--clr-9);
+    border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+    font-family: comico;
+    font-size: var(--size-xs);
+}
+
+.recipe{
+    font-family: comico, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: var(--clr-9);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#content__container{
+    width: 95%;
+    padding-bottom: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border-top: solid 3px var(--clr-9);
+    border-bottom: solid 3px var(--clr-9);
+}
+
+.heading{
+    margin: 1rem auto;
+    font-family: comico;
+    color: var(--clr-3);
+}
+
+.recipe__content{
+    color: var(--clr-9);
+    font-size: var(--size-sm);
+    list-style: square;
+    margin: 0.3rem auto;
+}
+
+.canele-recipe{
+    display: run-in;
+}
+
+.carrotcake-recipe{
+    display: none;
+}
+
+.focaccia-recipe{
+    display: none;
+}
+
+.cinnamonroll-recipe{
+    display: none;
+}
+
+.eclair-recipe{
+    display: none;
+}
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+    #recipe__dropdown{
+        height: 3rem;
+        font-size: var(--size-base);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    #recipe__title{
+        font-size: var(--size-6xl);
+        padding-top: 2rem;
+    }
+
+    #recipe__message{
+        font-size: var(--size-xl);
+    }
+
+    #recipe__dropdown{
+        font-size: var(--size-base);
+        width: 45%;
+    }
+
+    #dropdown__container{
+        width: 100%;
+        margin: 1rem;
+    }
+    .recipe__content{
+        list-style-type: none;
+    }
+}
+
+
+/* lg */
+@media (min-width: 1024px) {
+    .recipe__content{
+        font-size: var(--size-base);
+    }
+
+    #recipe__dropdown{
+        font-size: var(--size-xl);
+        width: 45%;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    #recipe__message{
+        font-size: var(--size-3xl);
+    }
+
+    #recipe__dropdown{
+        height: 4rem;
+        font-size: var(--size-2xl);
+    }
+
+    .recipe__content{
+        font-size: var(--size-base);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    #recipe{
+        border-radius: 15px;
+        width: 70%;
+    }
+
+    #recipe__message{
+        font-size: var(--size-4xl);
+    }
+
+    .recipe__content{
+        font-size: var(--size-lg    );
+        margin: 0.5rem auto;
+    }
+
+    #recipe__dropdown{
+        width: 40%;
+    }
+}

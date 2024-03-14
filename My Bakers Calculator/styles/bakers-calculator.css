@@ -1,0 +1,44 @@
+:root{
+    --clr-1: #f2a65a;
+    --clr-2: #585123;
+    --clr-3: #eec170;
+    --clr-4: #f58649;
+    --clr-5: #772f1a;
+    --clr-6: #3c1518;
+    --clr-7: #283618;
+    --clr-8: #9e2a2b;
+    --clr-9: #fefae0;
+
+/* sizes */
+--size-xxs: 0.5rem ;
+--size-xs: 0.75rem;
+--size-sm: 0.875rem;
+--size-base: 1rem;
+--size-lg: 1.125rem;
+--size-xl: 1.25rem;
+--size-2xl: 1.5rem;
+--size-3xl: 1.875rem;
+--size-4xl: 2.25rem;
+--size-5xl: 3rem;
+--size-6xl: 3.755rem;
+--size-7xl: 4.5rem;
+--size-8xl: 5rem;
+--size-9xl: 8rem;
+--size-10xl: 10rem;
+}
+
+*{
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Comico', cursive;
+    font-family: 'Switzer', sans-serif;
+    background-color: var(--clr-9);
+}

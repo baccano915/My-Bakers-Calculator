@@ -1,0 +1,156 @@
+#resizer{
+    background-color: var(--clr-7);
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding-bottom: 0.10rem;
+
+}
+
+#resizer__title{
+    margin: auto;
+    color: var(--clr-3);
+    font-family: comico;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: var(--size-3xl);
+    border-bottom: solid 2px var(--clr-9);
+    border-radius: 5px;
+    width: 60%;
+    margin-bottom: 1rem;
+    
+}
+
+label{
+    font-family: comico;
+    color: var(--clr-4);
+    font-size: var(--size-xs);
+    margin: 1rem;
+
+    
+}
+
+hr{
+    margin: 1rem;
+    border-color: var(--clr-9);
+}
+
+#ingredient{
+    width: 30%;
+    font-size: var(--size-xs);
+    background-color: var(--clr-9);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#quantity{
+    width: 13%;
+    font-size: var(--size-xs);
+    background-color: var(--clr-9);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#multiplier{
+    font-size: var(--size-xs);
+    background-color: var(--clr-9);
+    border-radius: 5px;
+    width: 9%;
+}
+
+.resizer__btn{
+    color: var(--clr-9);
+    background-color: var(--clr-6);
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+#new-recipe{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+#new-recipe__title{
+    width: 50%;
+    font-family: comico;
+    color: var(--clr-3);
+    border-bottom: solid 2px var(--clr-9);
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.new-recipe__ingredient{
+    color: var(--clr-9);
+}
+
+/* xs */
+@media (min-width: 475px) {}
+
+/* sm */
+@media (min-width: 640px) {
+    label{
+        font-size: var(--size-base);
+    }
+
+    #ingredient{
+        font-size: var(--size-sm);
+    }
+    
+    #quantity{
+        font-size: var(--size-sm);
+    }
+    
+    #multiplier{
+        font-size: var(--size-sm);
+    }
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    #resizer__title{
+        font-size: var(--size-5xl);
+    }
+
+    label{
+        font-size: var(--size-xl);
+    }
+
+    #ingredient{
+        font-size: var(--size-base);
+    }
+    
+    #quantity{
+        font-size: var(--size-base);
+    }
+    
+    #multiplier{
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    #resizer{
+        width: 65%;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    #resizer{
+        width: 45%;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}

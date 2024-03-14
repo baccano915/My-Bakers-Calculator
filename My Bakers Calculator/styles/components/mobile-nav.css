@@ -1,0 +1,35 @@
+.mobile-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: comico;
+    font-size: var(--size-xl);
+}
+
+.mobile-nav__menu{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile-nav__link{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.mobile-nav__link:hover{
+    color: var(--clr-3);
+}

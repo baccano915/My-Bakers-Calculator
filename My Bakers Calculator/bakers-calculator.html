@@ -1,0 +1,276 @@
+<DOCTYPE!> 
+<html lang= "en">
+    <head>
+        <title>My Bakers Calculator</title>
+        <link rel="stylesheet" href="./styles/modern-normalize.css">
+        <link rel="stylesheet" href="./styles/bakers-calculator.css">
+        <link rel="stylesheet" href="./styles/components/header.css">
+        <link rel="stylesheet" href="./styles/utilities.css">
+        <link rel="stylesheet" href="./styles/components/home.css">
+        <link rel="stylesheet" href="./styles/components/resizer.css">
+        <link rel="stylesheet" href="./styles/components/legend.css">
+        <link rel="stylesheet" href="./styles/components/recipe.css">
+        <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+        <meta charset="UTF-8">
+        <meta name ="viewport" content-width="device-width, initial-scale=1.0">
+        <link href="https://api.fontshare.com/v2/css?f[]=comico@400&f[]=switzer@701,100,700,400,201,401,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header container">
+            <h1 class= "header__title">My Bakers Calculator</h1>
+            <nav>
+                <ul class= "header__menu">
+                    <li><a class="header__link" href="#home">Home</a></li>
+                    <li><a class="header__link" href="#resizer">Resizer</a></li>
+                    <li><a class="header__link" href="#legend">Legend</a></li>
+                    <li><a class="header__link" href="#recipe">Recipe</a></li>
+                </ul>
+                <button class="header__bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <!--Mobile Navigation-->
+        <div class="mobile-nav">
+            <nav>
+                <ul class="mobile-nav__menu">
+                    <li>
+                        <a class="mobile-nav__link" href ="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav__link" href ="#resizer">Resizer</a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav__link" href ="#legend">Legend</a>
+                    </li>
+                    <li>
+                        <a class="mobile-nav__link" href ="#recipe">Recipe</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--End of Mobile Navigation-->
+        <main>
+            <section id="home" class="container">
+                <div class="home__message">
+                    <h1 class="home__text" >Need to cut a recipe?</h1>
+                </div>
+                <div class="image__gallery">
+                    <div class="gallery__container">
+                        <img class=" image img-1" src="./images/IMG_6238.jpg" >
+                        <img class=" image img-2" src="./images/IMG_6289.jpg" >
+                        <img class=" image img-3" src="./images/IMG_8296.jpg" >
+                        <img class=" image img-4" src="./images/IMG_8659.jpg" >
+                        <img class=" image img-5" src="./images/IMG_8133.jpg" >
+                    </div>
+                </div>
+            </section>
+            <section id="resizer" class="container">
+                <h1 id="resizer__title">Recipe Resizer</h1>
+                <label class="resizer__label" for="ingredient">Ingredient:</label>
+                <input type="text" id="ingredient">
+                <label class="resizer__label" for="quantity">Quantity:</label>
+                <input type="number" id="quantity">
+                <hr>
+                <label for="multiplier">Multiplier:</label>
+                <input type="number" id="multiplier" min="0.1" max="10" step="0.1" value="1">
+                <button class="resizer__btn" id="multiplyBtn">X</button>
+                <button class="resizer__btn" id="divideBtn">%</button>
+                <hr>
+                <div id="new-recipe">
+                    <h2 id="new-recipe__title">New recipe</h2>
+                </div>
+            </section>
+            <section id="legend" class="continer">
+                <h1 id="legend__title">Unit Legend</h1>
+                <h2 class="legend__subtitle">Common Conversions</h2>
+                <ul class="legend__content">
+                    <li>1 tablespoon = 3 teaspoons</li>
+                    <li>1/4th cup = 4 tablespoons</li>
+                    <li>1/3rd cup = 5 tablespoons + 1 teaspoon</li>
+                    <li>1/2 cup = 8 tablespoons</li>
+                    <li>1 cup = 16 tablespoons</li>
+                    <li>1 cup = 240 mL</li>
+                    <li>1 oz = 28 g</li>
+                    <li>1 cup = 16 tablespoons</li>
+                    <li>1 cup = 1/2 pint</li>
+                    <li>1 teaspoon = 5ml</li>
+                    <li>1 tablespoon = 15ml</li>
+                </ul>
+                <h2 class="legend__subtitle">Common Ingredient Weight</h2>
+                <ul class="legend__content">
+                    <li>1 cup of all-purpose flour = 120g</li>
+                    <li>1 cup of granulated sugar = 200g</li>
+                    <li>1 cup of dark brown sugar(packed) = 200g</li>
+                    <li>1 cup of light brown sugar(packed) = 200g</li>
+                    <li>1 cup of butter = 227g</li>
+                    <li>1 stick of butter = 113g</li>
+                    <li>1 large egg = 60g</li>
+                    <li>1 large egg white = 30g</li>
+                    <li>1 large egg yolk - 30g</li>
+                </ul>
+            </section>
+            <section id="recipe" class="container">
+                <h1 id="recipe__title">My Favorite Recipes!</h1>
+                <p id="recipe__message">These are some of the recipe's that I tend to make the most often, or ones that I had the most fun making</p>
+                <div id="dropdown__container">  
+                    <select id="recipe__dropdown" onchange="toggleRecipe()">
+                        <option class="recipe" id="canele" value="canele" selected>Canele (Makes 16)</option>
+                        <option class="recipe" id="carrotcake" value="carrot-cake">Carrot Cake (Makes 12 Slices)</option>
+                        <option class="recipe" id="focaccia" value="focaccia" >Focaccia (Makes 1 Sheet)</option>
+                        <option class="recipe" id="eclair" value="eclair">Eclair (Makes 12)</option>
+                        <option class="recipe" id="cinnamonroll" value="cinnamon-roll">Cinnamon Roll (Makes 12)</option>
+                    </select>
+                </div>
+                <div id="content__container">
+                    <h1 class="heading">Ingredients</h1>
+                    <p class="content">
+                        <ul class="recipe__list canele-recipe">
+                            <li class="recipe__content canele-recipe">2 Vanilla Beans</li>
+                            <li class="recipe__content canele-recipe">500ml of cold Whole Milk</li>
+                            <li class="recipe__content canele-recipe">200g Cane Sugar</li>
+                            <li class="recipe__content canele-recipe">100g of All-Purpose Flour</li>
+                            <li class="recipe__content canele-recipe">50g of Butter</li>
+                            <li class="recipe__content canele-recipe">2 Large Eggs</li>
+                            <li class="recipe__content canele-recipe">2 Large Egg Yolks</li>
+                            <li class="recipe__content canele-recipe">60ml Dark Rum</li>
+                            <li class="recipe__content canele-recipe">40g Beeswax (Mold Coating)</li>
+                            <li class="recipe__content canele-recipe">60g Butter (Mold Coating)</li>
+                        </ul>
+                        <ul class="recipe__list carrotcake-recipe">
+                            <li class="recipe__content carrotcake-recipe">300g of All-Purpose Flour</li>
+                            <li class="recipe__content carrotcake-recipe">450g of Shredded Carrots</li>
+                            <li class="recipe__content carrotcake-recipe">335g of Granulated Sugar</li>
+                            <li class="recipe__content carrotcake-recipe">2/3rd tsp of Cinnamon</li>
+                            <li class="recipe__content carrotcake-recipe">1/2 tsp of All-Spice</li>
+                            <li class="recipe__content carrotcake-recipe">1/4th tsp of Ginger</li>
+                            <li class="recipe__content carrotcake-recipe">1/2 tsp of Cardamom</li>
+                            <li class="recipe__content carrotcake-recipe">2 tsp of Baking Powder</li>
+                            <li class="recipe__content carrotcake-recipe">2 tsp of Baking Soda</li>
+                            <li class="recipe__content carrotcake-recipe">1 and 1/2 tsp of salt</li>
+                            <li class="recipe__content carrotcake-recipe">3 Large Eggs</li>
+                            <li class="recipe__content carrotcake-recipe">180ml of Sour Cream</li>
+                            <li class="recipe__content carrotcake-recipe">120ml of Apple Sauc</li>
+                            <li class="recipe__content carrotcake-recipe">180ml of Vegetable Oil</li>
+                            <li class="recipe__content carrotcake-recipe">452g of Colder Room Temp Full Fat Cream Cheese</li>
+                            <li class="recipe__content carrotcake-recipe">340g of Colder Unsalted Butter</li>
+                            <li class="recipe__content carrotcake-recipe">1 tsp of Vanilla Extract</li>
+                            <li class="recipe__content carrotcake-recipe">350g of Confectioners Sugar</li>
+                            <li class="recipe__content carrotcake-recipe">2 tsp of Vanilla Extract</li>
+                        </ul>
+                        <ul class="recipe__list focaccia-recipe">
+                            <li class="recipe__content focaccia-recipe">2 and 1/4th tsp of Active Dry Yeast</li>
+                            <li class="recipe__content focaccia-recipe">780g of Bread Flour</li>
+                            <li class="recipe__content focaccia-recipe">2 tbsp of Salt</li>
+                            <li class="recipe__content focaccia-recipe">1 cup of Olive Oil</li>
+                        </ul>
+                        <ul class="recipe__list cinnamonroll-recipe">
+                            <li class="recipe__content cinnamonroll-recipe">580g of All-Purpose Flour</li>
+                            <li class="recipe__content cinnamonroll-recipe">107g of Granulated Sugar</li>
+                            <li class="recipe__content cinnamonroll-recipe">6g of Fine Sea Salt</li>
+                            <li class="recipe__content cinnamonroll-recipe">7g of Instant Yeast</li>
+                            <li class="recipe__content cinnamonroll-recipe">235g of Lukewarm Whole Milk</li>
+                            <li class="recipe__content cinnamonroll-recipe">84g of Unsalted Butter</li>
+                            <li class="recipe__content cinnamonroll-recipe">2 Large Eggs and 1 Egg Yolk</li>
+                            <li class="recipe__content cinnamonroll-recipe">225g of Brown Sugar</li>
+                            <li class="recipe__content cinnamonroll-recipe">17g of Cinnamon</li>
+                            <li class="recipe__content cinnamonroll-recipe">90g of Powdered Sugar</li>
+                            <li class="recipe__content cinnamonroll-recipe">1/2 of Vanilla Bean</li>
+                            <li class="recipe__content cinnamonroll-recipe">115g of Full Fat Cream Cheese</li>
+                            <li class="recipe__content cinnamonroll-recipe">3 tbsp of Whole Milk</li>
+                        </ul>
+                        <ul class="recipe__list eclair-recipe">
+                            <li class="recipe__content eclair-recipe">1 Vanilla Bean</li>
+                            <li class="recipe__content eclair-recipe">135g Cane Sugar</li>
+                            <li class="recipe__content eclair-recipe">34g of Corn Starch</li>
+                            <li class="recipe__content eclair-recipe">14g of Unsalted Butter</li>
+                            <li class="recipe__content eclair-recipe">6 Large Egg Yolks</li>
+                            <li class="recipe__content eclair-recipe">480ml of Whole Milk</li>
+                            <li class="recipe__content eclair-recipe">70g of Bread Flour</li>
+                            <li class="recipe__content eclair-recipe">1/4th tsp of Salt</li>
+                            <li class="recipe__content eclair-recipe">1 tsp of Cane Sugar</li>
+                            <li class="recipe__content eclair-recipe">60g of Water</li>
+                            <li class="recipe__content eclair-recipe">60g of Whole Milk</li>
+                            <li class="recipe__content eclair-recipe">4 Eggs</li>
+                            <li class="recipe__content eclair-recipe">60g of Unsalted Butter</li>
+                        </ul>
+                    </p>
+                    <h1 class="heading">Instructions</h1>
+                    <p class="content">
+                        <ul class="recipe__list canele-recipe">
+                            <li class="recipe__content canele-recipe">Remove seeds from vanilla pod. Add the seeds, pods, and milk in a sauce pan. Bring to a gentle simmer</li>
+                            <li class="recipe__content canele-recipe">In a different bowl whisk sugar and eggs till combined, then add the melted butter till also combined</li>
+                            <li class="recipe__content canele-recipe">Strain liquid in saucepan into egg, sugar, and butter mixture. Make sure to temper the eggs with the milk as to not cook the eggs</li>
+                            <li class="recipe__content canele-recipe">Sift the flour into the bowl and mix till combined</li>
+                            <li class="recipe__content canele-recipe">Add the rum and incorporate it</li>
+                            <li class="recipe__content canele-recipe">Refrigerate for 3 days to hydrate the flour</li>
+                            <li class="recipe__content canele-recipe">When it is time to back, preheat oven to 550 or as high as you can get it</li>
+                            <li class="recipe__content canele-recipe">Melt butter and beeswax, then pour it into the molds leaving 1 cm from the top, and then quickly pour it back out. Do that for all of the molds</li>
+                            <li class="recipe__content canele-recipe">Fill the molds with 60g of batter, place them on a baking sheet and leave them in 550 for 10 minutes, then drop temperature to 375 and continue baking for 45-50 minutes</li>
+                            <li class="recipe__content canele-recipe">Take them out of the oven, remove them from the molds upside down on a baking rack and let cool for 2 hours</li>
+                        </ul>
+                        <ul class="recipe__list carrotcake-recipe">
+                            <li class="recipe__content carrotcake-recipe">First, butter 3 8 inch cake pans and line them with parchment paper cut into a circle</li>
+                            <li class="recipe__content carrotcake-recipe">Drop a tsp of flour into each cake pan, and toss to coat</li>
+                            <li class="recipe__content carrotcake-recipe">Shred the carrots and then put them aside</li>
+                            <li class="recipe__content carrotcake-recipe">Under a sifter, add all dry ingredients to a bowl and whisk together</li>
+                            <li class="recipe__content carrotcake-recipe">In another bowl, mix all of the wet ingredients and then whisk together</li>
+                            <li class="recipe__content carrotcake-recipe">Add wet into the dry and fold in. Fold until you just stop seeinf any streaks of dry> Its oaky if a little lumpy</li>
+                            <li class="recipe__content carrotcake-recipe">Equally add to each cake pan and place in the oven at 350F for 40-45 minutes until straw comes out 90% clean</li>
+                            <li class="recipe__content carrotcake-recipe">For the frosting, mix the butter and cream cheese together with a whisk and when it is 3/5th combined add the confectioner's sugar until fully incorportated</li>
+                        </ul>
+                        <ul class="recipe__list focaccia-recipe">
+                            <li class="recipe__content focaccia-recipe">In 113g of luke warm water activate the yeast</li>
+                            <li class="recipe__content focaccia-recipe">Add it to stand mixer, along with 567g of room temperature water, the the flour and salt</li>
+                            <li class="recipe__content focaccia-recipe">Mix on low speed until loose dough comes together, then increase speed to medium-high for 5 minutes so that the dough looks smooth and wraps around the hook</li>
+                            <li class="recipe__content focaccia-recipe">Let rest for 15 minutes under a damp towel, then turn it back up to medium-high speed for 10-15 minutes or until the dough is pulling awat from the sides</li>
+                            <li class="recipe__content focaccia-recipe">Pour 1/4th of the oil in a large bowl and swirl to coat. Place dough in bowl, then when the oil starts rising, gentley dab some of the oil over the top to coat</li>
+                            <li class="recipe__content focaccia-recipe">Let the dough proof for 1 hr and 30 min</li>
+                            <li class="recipe__content focaccia-recipe">Drizzle another 1/4th of oil in a half-sheet pan and coat it. Then with oiled hands, pick up a chunk from the corner of the dough and let the weight of it fall into the center. Do that for the other 3 corners as well</li>
+                            <li class="recipe__content focaccia-recipe">Now place it on to the sheet pan and start to stretch the dough in all directions, but not to fully cover just to start the process</li>
+                            <li class="recipe__content focaccia-recipe">Let proof a second time in fridge overnight</li>
+                            <li class="recipe__content focaccia-recipe">If its not double the height, let it sit at room temperature until it does. Then stretch it out to fit all sides of the pan</li>
+                            <li class="recipe__content focaccia-recipe">Pour the remaining oil over the dough and dimple</li>
+                            <li class="recipe__content focaccia-recipe">Bake at 450F for 20-25 minutes on bottom rack, then transfer to top rack for 5 minutes. Let it cool for 10 minutes before serving</li>
+                        </ul>
+                        <ul class="recipe__list cinnamonroll-recipe">
+                            <li class="recipe__content cinnamonroll-recipe">In a stand mixer, whisk together all-purpose flour, granulated sugar, and fine sea salt</li>
+                            <li class="recipe__content cinnamonroll-recipe">Add in softened butter and blend in using two forks</li>
+                            <li class="recipe__content cinnamonroll-recipe">In a separate container, whisk together lukewarm whole milk and yeast</li>
+                            <li class="recipe__content cinnamonroll-recipe">Using the doughhook attachment, set to medium-low, add in yeast mixture, eggs, and mix for 2-3 minutes</li>
+                            <li class="recipe__content cinnamonroll-recipe">On a lightly-floured work surface, knead for 60 seconds, plop in a greased bowl and let rise for 90 minutes</li>
+                            <li class="recipe__content cinnamonroll-recipe">Once dough is ready, mix the cinnamon and brown sugar to make the filling</li>
+                            <li class="recipe__content cinnamonroll-recipe">Dump dough on a lightly floured work surface and roll it into a rectangle</li>
+                            <li class="recipe__content cinnamonroll-recipe">Spread softened unsalted butter all over the dough and evenly spread the filling</li>
+                            <li class="recipe__content cinnamonroll-recipe">Tightly roll and slice into 12 2 inch segments</li>
+                            <li class="recipe__content cinnamonroll-recipe">Grease a 9x13 baking dish, add rolls, and let rise for 40 minutes</li>
+                            <li class="recipe__content cinnamonroll-recipe">Pour some heavy cream above rolls, and bake in a 375F oven for 15-20 minutes and let cool for another 15</li>
+                            <li class="recipe__content cinnamonroll-recipe">Whip the cream cheese until smooth, add powdered sugar until combined, mix in whole milk, then pour over cinnamon rolls</li>
+                        </ul>
+                        <ul class="recipe__list eclair-recipe">
+                            <li class="recipe__content eclair-recipe">Place vanilla bean, butter, and milk into a sauce pan and simmer for 5 minutes. Take off heat and set aside</li>
+                            <li class="recipe__content eclair-recipe">In a bowl add the eggs, sugar, and salt and whisk until combines/pale yellow</li>
+                            <li class="recipe__content eclair-recipe">Sift in cornstarch and keep whisking till incorportated</li>
+                            <li class="recipe__content eclair-recipe">Temper the batter with the milk, then finish pouring. Strain mixuture into a pot and on medium heat whisk until it thickens up</li>
+                            <li class="recipe__content eclair-recipe">Take off heat, pour into a glass bowl and line with plastic wrap so it is directly covering the cream in order to not develop a skin</li>
+                            <li class="recipe__content eclair-recipe">Put in fridge overnight and before piping, make sure to whisk it so it is maleable</li>
+                            <li class="recipe__content eclair-recipe">For the Choux, place butter, milk, salt, and sugar into a sauce pan over medium heat</li>
+                            <li class="recipe__content eclair-recipe">As soon as it starts to boil, remove from heat, add the sifted flour and mix intensely until it forms one smooth ball</li>
+                            <li class="recipe__content eclair-recipe">Place back on heat and cook dough for 3 minutes by mixing constantly to evaporate the water</li>
+                            <li class="recipe__content eclair-recipe">Transfer dough into stand mixer bowl and whisk on low speed with paddle attachment to let the dough cool a bit</li>
+                            <li class="recipe__content eclair-recipe">Start adding lightly whisked eggs until dough is a glossy and pipeable consistency</li>
+                            <li class="recipe__content eclair-recipe">Move dough into a pastry bag and pipe onto a sheet pan and dust with powdered sugar. Bake at 338F for 4o minutes. Let cool then fill with pastry cream</li>
+                            <li class="recipe__content eclair-recipe">For the ganache, double boil dark chocolate with some butter until it reaches a slightly thick consistency</li>
+                            <li class="recipe__content eclair-recipe">Dip the top of the eclair in the ganache and you are done!.</li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+    <script type ="module" src="./js/bakers-calculator.js"></script>
+</html>
